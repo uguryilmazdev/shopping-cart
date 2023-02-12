@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../styles/Shop.css';
 
 export default function Shop() {
   useEffect(() => {
@@ -17,7 +18,13 @@ export default function Shop() {
   return (
     <div>
       {items.map((item) => (
-        <h1 key={item.id}>{item.title}</h1>
+        <div className="shop-item">
+          <img src={item.image} alt="product" className="shop-item-img" />
+          <h2 key={item.id} className="shop-item-title">
+            {item.title}
+          </h2>
+          <h3 className="shop-item-price">{item.price}</h3>
+        </div>
       ))}
     </div>
   );
