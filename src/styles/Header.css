@@ -1,0 +1,25 @@
+.Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-title {
+}
+
+.navbar > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar-item {
+  list-style-type: none;
+  margin: auto 2rem;
+}
+
+.navbar-item > a {
+  text-decoration: none;
+}
