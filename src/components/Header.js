@@ -1,23 +1,25 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import '../styles/Header.css';
 
 export default function Header() {
   return (
     <div className="Header">
-      <h1 className="header-title">Title</h1>
+      <h1 className="header-title">Super Tech Items</h1>
       <nav className="navbar">
         <ul>
-          <li className="navbar-item">
-            <a href="#">Home</a>
-          </li>
-          <li className="navbar-item">
-            <a href="#">Shop</a>
-          </li>
-          <li className="navbar-item">
-            <a href="#">Contact</a>
-          </li>
-          <li className="navbar-item">
-            <a href="#">Cart</a>
-          </li>
+          <Link to="/">
+            <li className="navbar-item">Home</li>
+          </Link>
+          <Link to="/shop">
+            <li className="navbar-item">Shop</li>
+          </Link>
+          <Link to="/contact">
+            <li className="navbar-item">Contact</li>
+          </Link>
+          <Link to="/cart">
+            <li className="navbar-item">Cart</li>
+          </Link>
         </ul>
       </nav>
     </div>
