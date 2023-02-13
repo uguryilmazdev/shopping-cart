@@ -3,14 +3,15 @@ import Category from './Category';
 import '../styles/Shop.css';
 
 export default function Shop() {
-  useEffect(() => {
-    fetchItems();
-  }, []);
-
   const [items, setItems] = useState([]);
+  const [category, setCategory] = useState('all');
 
-  const fetchItems = async () => {
-    const data = await fetch('https://fakestoreapi.com/products');
+  useEffect(() => {
+    category === 'all' ? fetchItems('') : fetchItems(`category/${category}`);
+  }, [category]);
+
+  const fetchItems = async (prop) => {
+    const data = await fetch(`https://fakestoreapi.com/products/${prop}`);
     const items = await data.json();
     setItems(items);
     console.log(items);
@@ -19,17 +20,15 @@ export default function Shop() {
   return (
     <div className="Main">
       <div className="Shop">
-        <Category />
+        <Category category={category} setCategory={setCategory} />
         <div className="product-container">
           {items.map((item) => (
-            <div className="shop-item">
+            <div className="shop-item" key={item.id}>
               <div className="item-img-container">
                 <img src={item.image} alt="product" className="shop-item-img" />
               </div>
               <div className="item-detail-container">
-                <div key={item.id} className="shop-item-title">
-                  {item.title}
-                </div>
+                <div className="shop-item-title">{item.title}</div>
                 <div>
                   <div className="shop-item-price">${item.price}</div>
                   <button type="button" className="add-btn">
