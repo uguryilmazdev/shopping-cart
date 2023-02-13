@@ -8,12 +8,31 @@
   flex-direction: column;
 }
 
+/* ---------- category buttons ----------*/
 .category-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.category-btn {
+  width: 10rem;
+  height: 2rem;
+  margin: 3rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: burlywood;
+}
+
+.category-btn:hover {
+  background-color: rgb(199, 137, 57);
+}
+
+.category-btn:active {
+  background-color: rgb(224, 208, 188);
+}
+
+/* ---------- items ----------*/
 .product-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
