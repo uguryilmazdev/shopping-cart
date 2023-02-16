@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Category from './Category';
+import Category from '../components/Category';
 import '../styles/Shop.css';
 
-export default function Shop() {
+export default function Shop(props) {
   const [items, setItems] = useState([]);
   const [category, setCategory] = useState('all');
 

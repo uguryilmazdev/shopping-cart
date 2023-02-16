@@ -18,7 +18,7 @@ export default function Header() {
             <li className="navbar-item">Contact</li>
           </Link>
           <Link to="/cart">
-            <li className="navbar-item">Cart</li>
+            <li className="navbar-item">cart</li>
           </Link>
         </ul>
       </nav>
