@@ -21,7 +21,31 @@
 }
 
 .navbar-item {
+  position: relative;
   list-style-type: none;
   margin: auto 2rem;
   font-size: 1.25rem;
+}
+
+.cart-logo {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.cart-item-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50px;
+  right: 0;
+  bottom: 0;
+  transform: translate(15%, 15%);
+  background-color: black;
+  color: wheat;
 }

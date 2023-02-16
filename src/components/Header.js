@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Header.css';
+import CartLogo from '../img/shopping-cart.svg';
 
 export default function Header() {
   return (
@@ -18,7 +19,10 @@ export default function Header() {
             <li className="navbar-item">Contact</li>
           </Link>
           <Link to="/cart">
-            <li className="navbar-item">cart</li>
+            <li className="navbar-item">
+              <img src={CartLogo} alt="Cart Logo" className="cart-logo" />
+              <div className="cart-item-number">0</div>
+            </li>
           </Link>
         </ul>
       </nav>
