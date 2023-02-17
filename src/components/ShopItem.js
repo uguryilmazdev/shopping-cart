@@ -17,12 +17,7 @@ export default function ShopItem(props) {
                 type="button"
                 className="add-btn"
                 onClick={() =>
-                  addToLocalStorage([
-                    item.id,
-                    item.image,
-                    item.title,
-                    item.price,
-                  ])
+                  addToLocalStorage(item.id, item.image, item.title, item.price)
                 }
               >
                 Add to cart
