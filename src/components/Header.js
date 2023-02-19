@@ -5,7 +5,7 @@ import Cart from './Cart';
 import CartLogo from '../img/shopping-cart.svg';
 import { calculateTotalQuantity } from '../utilities/addToLocalStorage';
 
-export default function Header() {
+function Header() {
   const [cartItemNum, setCartItemNum] = useState(calculateTotalQuantity);
   const [showCart, setShowCart] = useState(false);
 
@@ -50,3 +50,5 @@ export default function Header() {
     </div>
   );
 }
+
+export default Header;
