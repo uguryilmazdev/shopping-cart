@@ -1,5 +1,5 @@
 import React from 'react';
-import addToLocalStorage from '../utilities/addToLocalStorage';
+import { addToLocalStorage } from '../utilities/addToLocalStorage';
 
 export default function ShopItem(props) {
   return (
@@ -16,9 +16,14 @@ export default function ShopItem(props) {
               <button
                 type="button"
                 className="add-btn"
-                onClick={() =>
-                  addToLocalStorage(item.id, item.image, item.title, item.price)
-                }
+                onClick={() => {
+                  addToLocalStorage(
+                    item.id,
+                    item.image,
+                    item.title,
+                    item.price
+                  );
+                }}
               >
                 Add to cart
               </button>
