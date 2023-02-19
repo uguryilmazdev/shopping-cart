@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Header.css';
+import Cart from './Cart';
 import CartLogo from '../img/shopping-cart.svg';
 import { calculateTotalQuantity } from '../utilities/addToLocalStorage';
 
 export default function Header() {
   const [cartItemNum, setCartItemNum] = useState(calculateTotalQuantity);
+  const [showCart, setShowCart] = useState(false);
 
   useEffect(() => {
     window.addEventListener('storage', () => {
@@ -31,14 +33,20 @@ export default function Header() {
           <Link to="/contact">
             <li className="navbar-item">Contact</li>
           </Link>
-          <Link to="/cart">
-            <li className="navbar-item">
+          <li className="navbar-item">
+            <button
+              type="button"
+              className="cart-btn"
+              onClick={() => setShowCart(true)}
+            >
               <img src={CartLogo} alt="Cart Logo" className="cart-logo" />
-              <div className="cart-item-number">{cartItemNum}</div>
-            </li>
-          </Link>
+            </button>
+
+            <div className="cart-item-number">{cartItemNum}</div>
+          </li>
         </ul>
       </nav>
+      {showCart && <Cart setShowCart={setShowCart} />}
     </div>
   );
 }

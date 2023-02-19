@@ -1,5 +1,38 @@
-.Cart {
+.darkBG {
+  background-color: rgba(0, 0, 0, 0.2);
   width: 100vw;
   height: 100vh;
-  background-color: aquamarine;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+}
+
+.centered {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.Cart {
+  width: 33.3333vw;
+  height: 100vh;
+  background: white;
+  color: black;
+  z-index: 10;
+  overflow-y: scroll;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+  animation-name: cart;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes cart {
+  0% {
+    width: 0vw;
+  }
+  100% {
+    width: 33.3333vw;
+  }
 }
