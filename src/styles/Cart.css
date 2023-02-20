@@ -61,6 +61,7 @@
 
 .shopping-bag-container {
   display: flex;
+  justify-content: flex-start;
   height: 75%;
   width: 100%;
   flex-direction: column;

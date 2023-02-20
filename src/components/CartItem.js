@@ -42,6 +42,7 @@ function decreaseCartItemQuantity(item) {
   //check if item needs to be removed
   if (product.quantity === 0) {
     localStorage.removeItem(item.id);
+    window.dispatchEvent(new Event('storage'));
   } else {
     localStorage.setItem(item.id, JSON.stringify(product));
     window.dispatchEvent(new Event('storage'));

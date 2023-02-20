@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import CartItem from './CartItem';
 import { getItemsFromStorage } from './CartItem';
 import '../styles/Cart.css';
 
 export default function Cart({ setShowCart }) {
-  const items = getItemsFromStorage();
+  const [items, setItems] = useState(getItemsFromStorage);
+
+  // check any changes in local storage
+  useEffect(() => {
+    window.addEventListener('storage', () => {
+      const items = getItemsFromStorage();
+      setItems(items);
+    });
+    return () => {
+      window.removeEventListener('storage', getItemsFromStorage);
+    };
+  }, []);
 
   return (
     <div className="darkBG">
