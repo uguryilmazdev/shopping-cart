@@ -6,6 +6,13 @@ import '../styles/Cart.css';
 export default function Cart({ setShowCart }) {
   const [items, setItems] = useState(getItemsFromStorage);
 
+  // close cart if user clicks outside the cart
+  document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('darkBG')) {
+      setShowCart(false);
+    }
+  });
+
   // check any changes in local storage
   useEffect(() => {
     window.addEventListener('storage', () => {
