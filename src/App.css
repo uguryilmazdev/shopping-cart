@@ -1,3 +1,27 @@
 .App {
   background-color: var(--main-bg);
 }
+
+/* ----- scrollbar styles -----*/
+/* main scrollbar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-cl-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-cl-secondary);
+}
+
+/* cart scrollbar */
+.shopping-bag-container::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+.shopping-bag-container::-webkit-scrollbar-thumb {
+  background: var(--alternative-bg);
+  border-radius: 10px;
+}
