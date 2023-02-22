@@ -2,6 +2,19 @@
   /* font size */
   --font-size: calc(0.625rem + 0.5vw);
   font-size: var(--font-size);
+
+  /* ----- color ----- */
+  /* bg and text */
+  --main-bg: #eff5f5;
+  --header-bg: #e1eedd;
+  --alternative-bg: #f0a04b;
+  --text-cl-primary: #183a1d;
+  --text-cl-secondary: #579bb1;
+  --text-cl-tertiary: #fefbe9;
+
+  /* item color */
+  --item-bg: white;
+  --item-detail-bg: #def5e5;
 }
 
 body {

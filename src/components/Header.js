@@ -21,14 +21,14 @@ function Header() {
 
   return (
     <div className="Header">
-      <h1 className="header-title">Super Tech Items</h1>
+      <h1 className="header-title">Super Store</h1>
       <nav className="navbar">
         <ul>
           <Link to="/">
             <li className="navbar-item">Home</li>
           </Link>
           <Link to="/shop">
-            <li className="navbar-item">Shop</li>
+            <li className="navbar-item">Store</li>
           </Link>
           <Link to="/contact">
             <li className="navbar-item">Contact</li>

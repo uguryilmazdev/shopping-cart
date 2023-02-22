@@ -21,11 +21,15 @@
   margin: 3rem 1rem;
   border: none;
   border-radius: 5px;
-  background-color: burlywood;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background-color: var(--alternative-bg);
+  color: var(--text-cl-tertiary);
+  cursor: pointer;
 }
 
 .category-btn:hover {
-  background-color: rgb(199, 137, 57);
+  background-color: rgb(187, 116, 24);
 }
 
 .category-btn:active {
@@ -47,7 +51,9 @@
   font-size: 1rem;
   margin: auto;
   border-radius: 10px;
-  border: 2px solid black;
+  border: 2px solid var(--text-cl-primary);
+  color: var(--text-cl-primary);
+  background-color: var(--item-bg);
 }
 
 .item-img-container {
@@ -67,7 +73,10 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 0.2rem 0.75rem;
-  border-top: 1px solid black;
+  border-top: 1px solid var(--text-cl-primary);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: var(--item-detail-bg);
 }
 
 .shop-item-title {
@@ -86,16 +95,17 @@
   height: 2rem;
   width: 100%;
   margin-bottom: 0.75rem;
-  background-color: black;
-  color: white;
+  background-color: var(--text-cl-primary);
+  color: var(--text-cl-tertiary);
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .add-btn:hover {
-  background-color: rgb(49, 47, 47);
+  background-color: var(--text-cl-secondary);
 }
 
 .add-btn:active {
-  background-color: rgb(100, 100, 100);
+  background-color: var(--text-cl-primary);
 }
