@@ -110,3 +110,13 @@
   background-color: var(--text-cl-secondary);
   color: var(--text-cl-tertiary);
 }
+
+/* loading screen */
+.loading-screen {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  color: var(--header-bg);
+}

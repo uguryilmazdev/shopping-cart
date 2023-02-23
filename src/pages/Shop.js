@@ -6,8 +6,13 @@ import '../styles/Shop.css';
 export default function Shop() {
   const [items, setItems] = useState([]);
   const [category, setCategory] = useState('all');
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    // activate loading screen
+    setLoading(true);
+
+    // catch selected category
     category === 'all' ? fetchItems('') : fetchItems(`category/${category}`);
   }, [category]);
 
@@ -15,9 +20,19 @@ export default function Shop() {
   const fetchItems = async (prop) => {
     const data = await fetch(`https://fakestoreapi.com/products/${prop}`);
     const items = await data.json();
+
     setItems(items);
-    console.log(items);
+    setLoading(false);
   };
+
+  // display loading screen if necessary
+  if (loading) {
+    return (
+      <div className="darkBG">
+        <div className="loading-screen">Loading...</div>
+      </div>
+    );
+  }
 
   return (
     <div className="Main">
