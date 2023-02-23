@@ -13,11 +13,12 @@
   width: 100%;
 }
 
-.contact-icon-container > a > img {
+.contact-icon-container > a {
   transform: scale(0.8);
   transition: all 0.25s ease;
+  cursor: pointer;
 }
 
-.contact-icon-container > a > img:hover {
+.contact-icon-container > a:hover {
   transform: scale(1);
 }
