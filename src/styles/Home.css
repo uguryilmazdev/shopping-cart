@@ -24,7 +24,7 @@
   color: var(--text-cl-primary);
 }
 
-.home-text-container > button {
+.home-text-container > * > button {
   height: 3rem;
   width: 15rem;
   border: none;
@@ -37,11 +37,6 @@
   transition: all 0.25s ease;
 }
 
-.home-text-container > button:hover {
+.home-text-container > * > button:hover {
   transform: scale(1.2);
-}
-
-.home-text-container > button:active {
-  transition: all 0.2s ease;
-  transform: scale(1);
 }
