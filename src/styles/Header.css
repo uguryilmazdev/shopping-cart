@@ -3,13 +3,13 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--header-bg);
+  background: var(--header-bg);
 }
 
 .header-title {
   font-size: 2.75rem;
   font-weight: 700;
-  color: var(--text-cl-primary);
+  color: var(--text-cl-alternative);
 }
 
 .navbar > ul {
@@ -53,8 +53,9 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.75rem;
+  width: 1.75rem;
+  font-size: 1rem;
   border-radius: 50px;
   right: 0;
   bottom: 0;

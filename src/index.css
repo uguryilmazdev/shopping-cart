@@ -6,12 +6,13 @@
   /* ----- color ----- */
   /* bg and text */
   --main-bg: #eff5f5;
-  --header-bg: #e1eedd;
-  --alternative-bg: #f0a04b;
-  --text-cl-primary: #183a1d;
-  --text-cl-secondary: #579bb1;
+  --header-bg: #183a1d;
+  --alternative-bg: #579bb1;
+  --text-cl-primary: #e1eedd;
+  --text-cl-secondary: #f0a04b;
   --text-cl-tertiary: #fefbe9;
-
+  --text-cl-alternative: #f2cd5c;
+  /*b5d5c5*/
   /* item color */
   --item-bg: white;
   --item-detail-bg: #def5e5;

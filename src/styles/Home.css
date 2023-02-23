@@ -1,0 +1,47 @@
+.Home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background: linear-gradient(
+    360deg,
+    var(--text-cl-primary) 0%,
+    var(--header-bg) 100%
+  );
+}
+
+.home-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  row-gap: 2rem;
+}
+
+.home-title {
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: var(--text-cl-primary);
+}
+
+.home-text-container > button {
+  height: 3rem;
+  width: 15rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  background-color: var(--text-cl-alternative);
+  color: var(--header-bg);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.home-text-container > button:hover {
+  transform: scale(1.2);
+}
+
+.home-text-container > button:active {
+  transition: all 0.2s ease;
+  transform: scale(1);
+}
