@@ -19,7 +19,7 @@
 }
 
 .home-title {
-  font-size: 4.5rem;
+  font-size: 4.25rem;
   font-weight: 600;
   color: var(--text-cl-primary);
 }
@@ -39,4 +39,27 @@
 
 .home-text-container > * > button:hover {
   transform: scale(1.2);
+}
+
+@media (width <= 1200px) {
+  .home-title {
+    font-size: 3rem;
+  }
+
+  .home-text-container > * > button {
+    height: 2.5rem;
+    width: 12rem;
+  }
+}
+
+@media (width <= 700px) {
+  .home-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (width <= 500px) {
+  .home-title {
+    font-size: 1.75rem;
+  }
 }

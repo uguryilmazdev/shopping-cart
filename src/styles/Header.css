@@ -17,6 +17,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding: 0;
 }
 
 .navbar > ul > * {
@@ -62,4 +63,21 @@
   transform: translate(15%, 15%);
   background-color: var(--text-cl-secondary);
   color: var(--text-cl-tertiary);
+}
+
+@media (width <= 1200px) {
+  .Header {
+    flex-direction: column;
+  }
+}
+
+@media (width <= 700px) {
+  .navbar > ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .navbar-item {
+    margin: 0.3rem 0.7rem;
+  }
 }
