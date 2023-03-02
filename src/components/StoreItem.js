@@ -1,10 +1,10 @@
 import React from 'react';
 import { addToLocalStorage } from '../utilities/addToLocalStorage';
 
-export default function ShopItem(props) {
+export default function StoreItem({ items }) {
   return (
     <div className="product-container">
-      {props.items.map((item) => (
+      {items.map((item) => (
         <div className="shop-item" key={item.id}>
           <div className="item-img-container">
             <img src={item.image} alt="product" className="shop-item-img" />

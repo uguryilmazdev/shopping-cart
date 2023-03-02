@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Category(props) {
+export default function Category({ setCategory }) {
   return (
     <div className="category-container">
       <div>
@@ -8,16 +8,16 @@ export default function Category(props) {
           type="button"
           className="category-btn"
           onClick={() => {
-            props.setCategory('all');
+            setCategory('all');
           }}
         >
-          All items
+          All Products
         </button>
         <button
           type="button"
           className="category-btn"
           onClick={() => {
-            props.setCategory(`men's clothing`);
+            setCategory(`men's clothing`);
           }}
         >
           Men's Clothing
@@ -26,7 +26,7 @@ export default function Category(props) {
           type="button"
           className="category-btn"
           onClick={() => {
-            props.setCategory(`women's clothing`);
+            setCategory(`women's clothing`);
           }}
         >
           Women's Clothing
@@ -35,7 +35,7 @@ export default function Category(props) {
           type="button"
           className="category-btn"
           onClick={() => {
-            props.setCategory(`jewelery`);
+            setCategory(`jewelery`);
           }}
         >
           Jewelery
@@ -44,7 +44,7 @@ export default function Category(props) {
           type="button"
           className="category-btn"
           onClick={() => {
-            props.setCategory(`electronics`);
+            setCategory(`electronics`);
           }}
         >
           Electronics

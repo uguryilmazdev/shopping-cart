@@ -6,13 +6,14 @@ import CartLogo from '../img/shopping-cart.svg';
 import { calculateTotalQuantity } from '../utilities/addToLocalStorage';
 
 function Header() {
-  const [cartItemNum, setCartItemNum] = useState(calculateTotalQuantity);
-  const [showCart, setShowCart] = useState(false);
+  const [totalItem, setTotalItem] = useState(calculateTotalQuantity);
+  const [openCart, setOpenCart] = useState(false);
 
+  // catch quantity changes in local storage
   useEffect(() => {
     window.addEventListener('storage', () => {
       const totalQuantity = calculateTotalQuantity();
-      setCartItemNum(totalQuantity);
+      setTotalItem(totalQuantity);
     });
     return () => {
       window.removeEventListener('storage', calculateTotalQuantity);
@@ -27,7 +28,7 @@ function Header() {
           <Link to="/">
             <li className="navbar-item">Home</li>
           </Link>
-          <Link to="/shop">
+          <Link to="/store">
             <li className="navbar-item">Store</li>
           </Link>
           <Link to="/contact">
@@ -37,16 +38,16 @@ function Header() {
             <button
               type="button"
               className="cart-btn"
-              onClick={() => setShowCart(true)}
+              onClick={() => setOpenCart(true)}
             >
               <img src={CartLogo} alt="Cart Logo" className="cart-logo" />
             </button>
 
-            <div className="cart-item-number">{cartItemNum}</div>
+            <div className="cart-item-number">{totalItem}</div>
           </li>
         </ul>
       </nav>
-      {showCart && <Cart setShowCart={setShowCart} />}
+      {openCart && <Cart setOpenCart={setOpenCart} />}
     </div>
   );
 }

@@ -3,13 +3,13 @@ import CartItem from './CartItem';
 import { getItemsFromStorage } from './CartItem';
 import '../styles/Cart.css';
 
-export default function Cart({ setShowCart }) {
+export default function Cart({ setOpenCart }) {
   const [items, setItems] = useState(getItemsFromStorage);
 
   // close cart if user clicks outside the cart
   document.addEventListener('click', (e) => {
     if (e.target.classList.contains('darkBG')) {
-      setShowCart(false);
+      setOpenCart(false);
     }
   });
 
@@ -31,7 +31,7 @@ export default function Cart({ setShowCart }) {
           <button
             type="button"
             className="exit-btn"
-            onClick={() => setShowCart(false)}
+            onClick={() => setOpenCart(false)}
           >
             X
           </button>
@@ -43,7 +43,7 @@ export default function Cart({ setShowCart }) {
             <button
               type="button"
               className="checkout-btn"
-              onClick={() => setShowCart(false)}
+              onClick={() => setOpenCart(false)}
             >
               Checkout
             </button>

@@ -7,8 +7,8 @@ export default function Home() {
     <div className="Home">
       <div className="home-text-container">
         <div className="home-title">BEST ONLINE STORE EVER!</div>
-        <Link to="/shop">
-          <button type="button">Shop now</button>
+        <Link to="/store">
+          <button type="button">Buy now</button>
         </Link>
       </div>
     </div>
