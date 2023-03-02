@@ -1,45 +1,33 @@
-<h1>Shopping Cart</h1>
-<hr>
+# Shopping Cart
 
-<h2>Project Overview</h2>
-<hr>
+## Project Overview
 
-<h3>DESCRIPTION</h3>
-<p>A simple shopping cart application</p>
+### DESCRIPTION
 
-<h3>FEATURES</h3>
-<ul>
-    <li>User friendly interface</li>
-    <li>API usage scenario</li>
-    <li>Add and remove products from the shopping cart</li>
-    <li>Filter products by categories</li>
-    <li>Responsive design</li>
-</ul>
+A simple shopping cart application
 
-<h3>TRY IT</h3>
-You can try shopping cart using the following link:
-<a href='https://askalamentor.github.io/shopping-cart/' target='_blank'>Live app</a>
+### FEATURES
 
-<h3>SCREENSHOTS</h3>
+- User friendly interface
+- API usage scenario
+- Add and remove products from the shopping cart
+- Filter products by categories
+- Responsive design
 
-<p>Home Page</p>
-    !home page(https://github.com/askalamentor/shopping-cart/blob/main/home.jpg?raw=true)
+### SCREENSHOTS
 
-<p>Store Page</p>
-    !store page(https://github.com/askalamentor/shopping-cart/blob/main/store.jpg?raw=true)
+Home Page
 
-<p>Cart</p>
-    !cart(https://github.com/askalamentor/shopping-cart/blob/main/cart.jpg?raw=true)
+Store Page
 
-<h2>Development</h2>
-<hr>
+Cart
 
-<h3>FRAMEWORKS</h3>
-<ul>
-    <li>React</li>
-</ul>
+## Development
 
-<h3>TOOLS</h3>
-<ul>
-    <li>React Router</li>
-</ul>
+### FRAMEWORKS
+
+- React
+
+### TOOLS
+
+- React Router
