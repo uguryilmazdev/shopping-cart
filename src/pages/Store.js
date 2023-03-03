@@ -18,11 +18,16 @@ export default function Store() {
 
   // fetch data from fakestoreapi.com
   const fetchItems = async (prop) => {
-    const data = await fetch(`https://fakestoreapi.com/products/${prop}`);
-    const items = await data.json();
+    try {
+      const data = await fetch(`https://fakestoreapi.com/products/${prop}`);
+      const items = await data.json();
 
-    setItems(items);
-    setLoading(false);
+      setItems(items);
+      setLoading(false);
+    } catch (e) {
+      setLoading(false);
+      alert(`We'll be right back!`);
+    }
   };
 
   // display loading screen if any delay
