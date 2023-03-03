@@ -16,7 +16,7 @@ A simple shopping cart application
 
 ### TRY DEMO
 
-<a href='https://askalamentor.github.io/shopping-cart/' target='_blank'>Live demo</a>
+<a href='https://askalamentor.github.io/shopping-cart/' target="_blank">Live demo</a>
 
 ### SCREENSHOTS
 
