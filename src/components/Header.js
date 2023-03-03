@@ -25,13 +25,13 @@ function Header() {
       <h1 className="header-title">Super Store</h1>
       <nav className="navbar">
         <ul>
-          <Link to="/">
+          <Link to="/shopping-cart/">
             <li className="navbar-item">Home</li>
           </Link>
-          <Link to="/store">
+          <Link to="/shopping-cart/store">
             <li className="navbar-item">Store</li>
           </Link>
-          <Link to="/contact">
+          <Link to="/shopping-cart/contact">
             <li className="navbar-item">Contact</li>
           </Link>
           <li className="navbar-item">
