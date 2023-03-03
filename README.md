@@ -14,6 +14,10 @@ A simple shopping cart application
 - Filter products by categories
 - Responsive design
 
+### TRY DEMO
+
+<a href='https://askalamentor.github.io/shopping-cart/' target='_blank'>Live demo</a>
+
 ### SCREENSHOTS
 
 Home Page
