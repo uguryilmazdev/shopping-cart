@@ -38,3 +38,4 @@ Cart
 ### TOOLS
 
 - React Router
+- Fake Store API
