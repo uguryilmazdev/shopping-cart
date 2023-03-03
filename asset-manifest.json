@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/shopping-store/static/css/main.5bc3a9d3.css",
-    "main.js": "/shopping-store/static/js/main.a24bd57b.js",
-    "static/media/github.svg": "/shopping-store/static/media/github.7a72df60331527614285f282098031c1.svg",
-    "static/media/instagram.svg": "/shopping-store/static/media/instagram.983eb35879155bcef14a30637bb41d32.svg",
-    "static/media/shopping-cart.svg": "/shopping-store/static/media/shopping-cart.4fff3817b17c83c4e52ce040f702ac15.svg",
-    "static/media/twitter.svg": "/shopping-store/static/media/twitter.82964bffe079392e54786a2cfc289eb6.svg",
-    "index.html": "/shopping-store/index.html",
-    "main.5bc3a9d3.css.map": "/shopping-store/static/css/main.5bc3a9d3.css.map",
-    "main.a24bd57b.js.map": "/shopping-store/static/js/main.a24bd57b.js.map"
+    "main.css": "/shopping-cart/static/css/main.5bc3a9d3.css",
+    "main.js": "/shopping-cart/static/js/main.db85fbde.js",
+    "static/media/github.svg": "/shopping-cart/static/media/github.7a72df60331527614285f282098031c1.svg",
+    "static/media/instagram.svg": "/shopping-cart/static/media/instagram.983eb35879155bcef14a30637bb41d32.svg",
+    "static/media/shopping-cart.svg": "/shopping-cart/static/media/shopping-cart.4fff3817b17c83c4e52ce040f702ac15.svg",
+    "static/media/twitter.svg": "/shopping-cart/static/media/twitter.82964bffe079392e54786a2cfc289eb6.svg",
+    "index.html": "/shopping-cart/index.html",
+    "main.5bc3a9d3.css.map": "/shopping-cart/static/css/main.5bc3a9d3.css.map",
+    "main.db85fbde.js.map": "/shopping-cart/static/js/main.db85fbde.js.map"
   },
   "entrypoints": [
     "static/css/main.5bc3a9d3.css",
-    "static/js/main.a24bd57b.js"
+    "static/js/main.db85fbde.js"
   ]
 }
