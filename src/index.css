@@ -1,7 +1,6 @@
 :root {
   /* font size */
-  --font-size: calc(0.625rem + 0.5vw);
-  font-size: var(--font-size);
+  font-size: 1vmax;
 
   /* ----- color ----- */
   /* bg and text */
@@ -16,6 +15,18 @@
   /* item color */
   --item-bg: white;
   --item-detail-bg: #def5e5;
+}
+
+@media (width <= 1024px) {
+  :root {
+    font-size: 1.3vmax;
+  }
+}
+
+@media (width <= 768px) {
+  :root {
+    font-size: 1.6vmax;
+  }
 }
 
 body {

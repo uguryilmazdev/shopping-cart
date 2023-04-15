@@ -1,10 +1,10 @@
-# Shopping Cart
+# Super Store
 
 ## Project Overview
 
 ### DESCRIPTION
 
-A simple shopping cart application
+Super Store is a simple shopping cart application
 
 ### FEATURES
 
