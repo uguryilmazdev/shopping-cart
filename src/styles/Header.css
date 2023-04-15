@@ -7,7 +7,7 @@
 }
 
 .header-title {
-  font-size: 2.75rem;
+  font-size: 3rem;
   font-weight: 700;
   color: var(--text-cl-alternative);
 }
@@ -28,7 +28,7 @@
   position: relative;
   list-style-type: none;
   margin: auto 2rem;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 600;
   color: var(--text-cl-secondary);
 }
@@ -65,7 +65,7 @@
   color: var(--text-cl-tertiary);
 }
 
-@media (width <= 1200px) {
+@media (width <= 1024px) {
   .Header {
     flex-direction: column;
   }
