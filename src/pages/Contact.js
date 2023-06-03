@@ -9,7 +9,7 @@ export default function Contact() {
     <div className="Contact">
       <div className="contact-icon-container">
         <a
-          href="https://github.com/askalamentor"
+          href="https://github.com/uguryilmazdev"
           target="_blank"
           rel="noreferrer"
         >
